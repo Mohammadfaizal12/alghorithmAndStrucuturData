@@ -1,6 +1,7 @@
 package com.juaracoding.algoritma.sorting.mergesort;
 
-public class MergeSortExmp {
+public class MergeSort {
+
     // Fungsi utama untuk mengurutkan array menggunakan Merge Sort
     public static void mergeSort(int[] array, int left, int right) {
         if (left < right) {
@@ -64,4 +65,27 @@ public class MergeSortExmp {
             j++;
             k++;
         }
+    }
+
+    // Fungsi utama untuk menjalankan program
+    public static void main(String[] args) {
+        int[] array = {38, 27, 43, 3, 9, 82, 10};
+
+        System.out.println("Array sebelum diurutkan:");
+        printArray(array);
+
+        // Panggil fungsi mergeSort
+        mergeSort(array, 0, array.length - 1);
+
+        System.out.println("Array setelah diurutkan:");
+        printArray(array);
+    }
+
+    // Fungsi untuk mencetak array
+    public static void printArray(int[] array) {
+        for (int num : array) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+    }
 }

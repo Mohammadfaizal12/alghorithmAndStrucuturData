@@ -1,4 +1,4 @@
-package com.juaracoding.algoritma.liniearsearch;
+package com.juaracoding.algoritma.searching.liniearsearch;
 
 public class LiniearSearch {
 

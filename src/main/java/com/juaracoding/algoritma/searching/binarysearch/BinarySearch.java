@@ -1,4 +1,4 @@
-package com.juaracoding.algoritma.binarysearch;
+package com.juaracoding.algoritma.searching.binarysearch;
 
 import java.util.Scanner;
 
@@ -7,10 +7,8 @@ public class BinarySearch {
     public static int binarySearch(int [] arr, int target) {
         int low = 0;
         int high = arr.length - 1; //mengambil index akhir array
-
         while (low <= high) {
             int mid = (low + high) / 2;
-
             if (arr[mid] == target) {
                 return mid;
             } else if (arr[mid] > target) {
@@ -18,8 +16,6 @@ public class BinarySearch {
             } else {
                 low = mid + 1;
             }
-
-
         }
 
         //jika target tidak ditemukan

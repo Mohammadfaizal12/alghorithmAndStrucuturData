@@ -1,4 +1,4 @@
-package com.juaracoding.algoritma;
+package com.juaracoding.algoritma.fizzbuzz;
 
 public class FizzBuz {
 

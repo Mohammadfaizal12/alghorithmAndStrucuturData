@@ -1,39 +1,38 @@
 package com.juaracoding.algoritma.sorting.selectionsort;
 
-public class SelectionSort {
+public class SelectionSortA {
    public static void selectionSort(int [] arr) {
        int n = arr.length;
-       //misal panjang array itu 5 nah dikurang 1 jadi nya 4 karna index array di mulai dari 0
        for (int i = 0; i < n - 1; i++) {
-           //tentuin minIndex nya
+           //tentuin minimal index
            int minIndex = i;
-
-           //mencari elemen terkecil 
-           for (int j = i + 1; j < n ; j++) {
-               //kalo true
+           for (int j = i + 1; j < n; j++) {
                if (arr[j] < arr[minIndex]) {
                    minIndex = j;
                }
            }
+
            int temp = arr[minIndex];
            arr[minIndex] = arr[i];
            arr[i] = temp;
        }
-   }
+    }
 
     public static void main(String[] args) {
-        int [] arr = {64, 25, 12, 22, 11};
+        int [] nilais = {78, 95, 66, 88, 74, 85, 92, 73, 67, 80};
 
-        System.out.println("Array sebelom di urutkan");
-        for (int num : arr) {
-            System.out.print(num + " ");
+        System.out.println("nilai sebelum di urutkan");
+        for (int nilai : nilais) {
+            System.out.print(nilai + " ");
         }
-        selectionSort(arr);
+        selectionSort(nilais);
+        System.out.println("\nnilai sebelum di urutkan");
+        for (int nilai : nilais) {
+            System.out.print(nilai + " ");
+        }
+        System.out.println("\nNilai Terkecil : " + nilais[0]);
+        System.out.println("Nilai Terbesar : " + nilais[nilais.length - 1]);
 
-        System.out.println("\nArray setelah di urutkan");
-        for (int num : arr) {
-            System.out.print(num + " ");
-        }
     }
 
 

@@ -1,4 +1,4 @@
-package com.juaracoding.bilanganprima;
+package com.juaracoding.algoritma.bilanganprima;
 import java.util.Scanner;
 public class BilanganPrima {
     public static boolean isPrime(int baa) {

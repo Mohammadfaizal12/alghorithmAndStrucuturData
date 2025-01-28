@@ -1,4 +1,4 @@
-package com.juaracoding.algoritma.binarysearch;
+package com.juaracoding.algoritma.searching.binarysearch;
 import java.util.Scanner;
 
 
